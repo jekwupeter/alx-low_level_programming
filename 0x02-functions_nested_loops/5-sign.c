@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * function - print_sign
+ * print_sign - determine number sign
  * @n: the number to be checked.
  * Return: 1 if positive, 0 if zero, -1 if negative, / if not a digit.
  */
