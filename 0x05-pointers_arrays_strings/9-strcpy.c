@@ -1,4 +1,4 @@
-#includ "main.h"
+#include "main.h"
 
 /**
  * *_strcpy - copy stringat the end of another string including \0
@@ -10,12 +10,10 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	int j;
+	int i;
 
-	for (j = 0; src[j] != '\0'; j++)
-	{
-		dest[j] = src[j];
-	}
-	dest[j] = '\0';
-	return (dest);
+	for(i = 0; src[i] !=0; i++)
+		*(dest + i) = src[i];
+	i++;
+	*(dest+i)=0;
 }
