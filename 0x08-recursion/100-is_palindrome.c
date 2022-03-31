@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * _strlen_recursion -returns the length of the string 
+ * _strlen_recursion - returns the length of the string 
  * @s: the string count 
- * Return - length of the string 
+ * Return: length of the string 
  */
 int _strlen_recursion(char *s)
 {
@@ -19,7 +19,7 @@ int _strlen_recursion(char *s)
  * @str: the string
  * @len: length of string
  * @count: counter of recurison
- * Return - 1 if string is a palindrome, 0 if not
+ * Return: 1 if string is a palindrome, 0 if not
  */
 int checker(char *str, int len, int count)
 {
@@ -34,7 +34,7 @@ int checker(char *str, int len, int count)
  * @s: the string to be checked
  * Return: 1 if string is a palindrome , 0 if not
  */
-int is palindrome(char *s)
+int is_palindrome(char *s)
 {
 	int len = _strlen_recursion(s);
 	int count = 0;

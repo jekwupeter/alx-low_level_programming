@@ -1,5 +1,4 @@
-#include "main.h"
-/*
+/**
  * factorial - returns the factorial of a number 
  * @n: the max factorial
  * Return: facotrial of number n
