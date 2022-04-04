@@ -8,22 +8,22 @@
  * return: 0 is SUCCESS
  */
 
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
-	int sum, x, y;
+	int num, digit, sum = 0;
 
-	for (x = 1; x < argc; x++)
+	for (num = 1; num < argc; num++)
 	{
-		for (y = 0; argv[x][y]; y++)
+		for (digit = 0; argv[num][digit]; digit++)
 		{
-			if (argv[x][y] < 48 || argv[x][y] > 57)
+			if (argv[num][digit] < '0' || argv[num][digit] > '9')
 			{
 				printf("Error\n");
 				return (1);
 			}
 		}
 
-		sum += atoi(argv[x]);
+		sum += atoi(argv[num]);
 	}
 
 	printf("%d\n", sum);

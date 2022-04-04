@@ -8,7 +8,7 @@
  * return: 0 if program is SUCCESS
  */
 
-int main(argc, *arg[])
+int main(int argc, char *argv[])
 {
 	int x, y, result;
 
