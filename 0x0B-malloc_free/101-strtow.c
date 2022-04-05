@@ -33,18 +33,18 @@ int word_len(char *str)
  */
 int count_words(char *str)
 {
-OAOAOAOAOA	int index = 0, words = 0, len = 0;
-OA
-OAOA	for (index = 0; *(str + index); index++)
-OA		len++;
+	int index = 0, words = 0, len = 0;
 
-OAOA	for (index = 0; index < len; index++)
-OA	{
+	for (index = 0; *(str + index); index++)
+		len++;
+
+	for (index = 0; index < len; index++)
+	{
 		if (*(str + index) != ' ')
-OAOA		{
-OAOA			words++;
-OA			index += word_len(str + index);
-OAOA		}
+		{
+			words++;
+			index += word_len(str + index);
+		}
 	}
 
 	return (words);
