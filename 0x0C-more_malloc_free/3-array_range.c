@@ -8,14 +8,14 @@
  * 	   Otherwise return a pointer to new array of integers
  */
 
-int *array_ranger(int min, int max)
+int *array_range(int min, int max)
 {
 	int *arr, i;
 	
 	if (min > max)
 		return (NULL);
 
-	arr = malloc(sizeof arr * size);
+	arr = malloc(sizeof arr * (min + max));
 
 	if (arr == NULL)
 		return (NULL);
