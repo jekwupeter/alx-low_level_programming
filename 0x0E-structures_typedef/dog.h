@@ -9,7 +9,7 @@
  *
  * Description: Defines the dog and the type of dog's struct
  */
-typeof struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
