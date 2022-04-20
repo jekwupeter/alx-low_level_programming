@@ -1,38 +1,32 @@
 #include "main.h"
-/**
- * _strncmp - compares two strings within b bytes.
- * @s1: string to check
- * @s2: string to check from
- * @b: number of bytes to check
- * Return: 0 if strings are the same else any other number
- */
-int _strcmp(char *s1, char *s2)
-{
-	while (*s1 == *s2)
-	{
-		if (*s1 == '\0')
-		{
-			return (0);
-		}
-		s1++;
-		s2++;
-	}
-	return (*s1 - *s2);
-}
+
 /**
  * _strstr - locates a substring
- * @haystack: string to look though
- * @needle: substring to find
- * Return: pointer to string with result of search
+ * @haystack: string in which to check for needle
+ * @needle: substring to find in haystack
+ *
+ * Return: pointer to beginning of needle in haystack or NULL if no match
  */
 char *_strstr(char *haystack, char *needle)
 {
-	/*compare substring*/
-	while (*haystack != '\0')
+	unsigned int i = 0, j = 0;
+
+	while (haystack[i])
 	{
-		if (_strcmp(needle, haystack) == 0)
-			return (haystack);
-		haystack++;
+		while (needle[j] && (haystack[i] == needle[0]))
+		{
+			if (haystack[i + j] == needle[j])
+				j++;
+			else
+				break;
+		}
+		if (needle[j])
+		{
+			i++;
+			j = 0;
+		}
+		else
+			return (haystack + i);
 	}
-	return (NULL);
+	return (0);
 }
