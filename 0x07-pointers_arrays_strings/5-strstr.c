@@ -30,7 +30,7 @@ char *_strstr(char *haystack, char *needle)
 	/*compare substring*/
 	while (*haystack != '\0')
 	{
-		if (_strncmp(needle, haystack) == 0)
+		if (_strcmp(needle, haystack) == 0)
 			return (haystack);
 		haystack++;
 	}
