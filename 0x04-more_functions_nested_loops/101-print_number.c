@@ -7,9 +7,9 @@
  */
 void print_number(int n)
 {
-	long int m; /* power of 10 */
+	long m; /* power of 10 */
 	int c; /* boolean check */
-	long int num; /* convert int to long */
+	long num; /* convert int to long */
 
 	num = n;
 	/* negatives */
