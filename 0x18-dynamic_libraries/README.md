@@ -1,0 +1,2 @@
+- Dynamic library
+- Static library
