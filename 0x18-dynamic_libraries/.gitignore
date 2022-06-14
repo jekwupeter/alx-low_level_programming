@@ -1,4 +1,3 @@
-*.c
 *.o
 len
 liball.so
